@@ -18,7 +18,7 @@ pipeline {
 
         script {
         f1 = load 'kam.groovy'  
-        f1.build()
+        f1.build(10,20)
         }
       }
     
