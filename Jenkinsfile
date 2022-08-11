@@ -13,10 +13,13 @@ pipeline {
     stage('build') {
     
       steps {
-        f1 = load 'kam.groovy'  
+        
         echo "${env.name}"
+
+        script {
+        f1 = load 'kam.groovy'  
         f1.build()
-      
+        }
       }
     
     }
